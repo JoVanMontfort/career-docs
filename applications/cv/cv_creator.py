@@ -51,7 +51,11 @@ left_col.append(Paragraph("💻 <a href='https://github.com/JoVanMontfort' color
 left_col.append(Spacer(1, 12))
 
 left_col.append(Paragraph("<b>Top Skills</b>", styles["LeftSectionHeader"]))
-left_col.append(Paragraph("• Software Development<br/>• Java<br/>• Embedded Systems<br/>• AI/ML Solutions<br/>• Data Engineering", styles["LeftBodyText"]))
+left_col.append(Paragraph("• Software Development<br/>• Java<br/>• Embedded Systems<br/>• AI/ML Solutions<br/>• Data Engineering<br/>• Blockchain Technology", styles["LeftBodyText"]))
+left_col.append(Spacer(1, 12))
+
+left_col.append(Paragraph("<b>Blockchain Expertise</b>", styles["LeftSectionHeader"]))
+left_col.append(Paragraph("• Smart Contract Development<br/>• Ethereum & Hyperledger<br/>• DApp Architecture<br/>• Tokenization Systems<br/>• Blockchain Security", styles["LeftBodyText"]))
 left_col.append(Spacer(1, 12))
 
 left_col.append(Paragraph("<b>Languages</b>", styles["LeftSectionHeader"]))
@@ -59,24 +63,25 @@ left_col.append(Paragraph("Dutch (Native)<br/>English<br/>French<br/>Spanish (El
 left_col.append(Spacer(1, 12))
 
 left_col.append(Paragraph("<b>Certifications</b>", styles["LeftSectionHeader"]))
-left_col.append(Paragraph("Oracle Certified Associate, Java SE 8 Programmer", styles["LeftBodyText"]))
+left_col.append(Paragraph("Oracle Certified Associate, Java SE 8 Programmer<br/>Ethereum Developer Certification (2023)", styles["LeftBodyText"]))
 
 # Right column content for first page
 right_col = []
 right_col.append(Spacer(1, 10))
 
 right_col.append(Paragraph("<b>Summary</b>", styles["RightSectionHeader"]))
-summary = """Started in 2007 as an embedded hardware/software developer in the automated guided vehicles industry. 
-After a few years developing automated systems I realized my passion was solely software development. 
-With more than 8 years of experience in Java, ORM, DDD, MVP and enterprise systems, I focus on building scalable, 
-maintainable, and data-driven solutions. Passionate about turning data into actionable insights and delivering 
-business value through technology."""
+summary = """Started in 2007 as an embedded hardware/software developer in the automated guided vehicles industry.
+After a few years developing automated systems I realized my passion was solely software development.
+With more than 8 years of experience in Java, ORM, DDD, MVP and enterprise systems, I focus on building scalable,
+maintainable, and data-driven solutions. Passionate about turning data into actionable insights and delivering
+business value through technology. Extensive experience in blockchain solutions including smart contracts,
+distributed ledger technology, and decentralized application architecture."""
 right_col.append(Paragraph(summary, styles["RightBodyText"]))
 right_col.append(Spacer(1, 12))
 
 right_col.append(Paragraph("<b>Experience</b>", styles["RightSectionHeader"]))
 
-# TriggerIQ experience
+# TriggerIQ experience - updated with blockchain
 triggeriq_details = """
 <b>TriggerIQ — Founder</b><br/>
 <i>June 2025 - Present (3 months) | Valencian Community, Spain</i><br/><br/>
@@ -84,7 +89,8 @@ triggeriq_details = """
 • Lead product vision, growth strategy, and customer success for AI solutions company<br/>
 • Defined company vision, product roadmap, and go-to-market strategy<br/>
 • Built and led cross-functional teams across AI/ML, data engineering, and customer success<br/>
-• Spearheaded development of core decision intelligence engine<br/>
+• Spearheaded development of core decision intelligence engine with blockchain-based audit trails<br/>
+• Implemented blockchain solutions for data provenance and integrity verification<br/>
 • Secured strategic partnerships and early adopters<br/>
 • Launched MVP in 2025, gaining early users within 8 weeks<br/>
 • Reduced decision cycle time for clients using real-time insights
@@ -92,7 +98,7 @@ triggeriq_details = """
 right_col.append(Paragraph(triggeriq_details, styles["RightBodyText"]))
 right_col.append(Spacer(1, 10))
 
-# ReLeaseNow experience
+# ReLeaseNow experience - updated with blockchain
 releasenow_details = """
 <b>ReLeaseNow.be — Founder</b><br/>
 <i>June 2025 - Present (3 months) | Antwerp, Belgium</i><br/><br/>
@@ -100,7 +106,8 @@ releasenow_details = """
 • Founded Belgium's first digital platform for car lease transfers<br/>
 • Defined and executed business model, product-market fit, and growth roadmap<br/>
 • Led design of digital platform for lease matchmaking and contract transfer<br/>
-• Integrated secure digital signature and ID verification tools<br/>
+• Implemented blockchain-based smart contracts for secure and transparent lease agreements<br/>
+• Integrated secure digital signature and ID verification tools with blockchain notarization<br/>
 • Negotiated collaborations with leasing companies, automotive dealers, and legal advisors<br/>
 • Created brand identity, messaging, and multi-channel ad strategy<br/>
 • Ensured GDPR-compliant data flows and digital contract validity
@@ -131,13 +138,15 @@ right_col_page2 = []
 right_col_page2.append(Paragraph("<b>Experience (continued)</b>", styles["RightSectionHeader"]))
 right_col_page2.append(Spacer(1, 12))
 
-# CLdN experience
+# CLdN experience - updated with blockchain
 cldn_details = """
 <b>CLdN ro-ro SA — JavaEE Software Engineer</b><br/>
 <i>October 2019 - June 2025 (5 years 9 months) | Antwerp Area, Belgium</i><br/><br/>
 
 • Designed and delivered highly available, low-latency applications for logistics processes<br/>
 • Ensured ISO/TC 104 compliance with optimized architecture (Tomcat & Spring)<br/>
+• Developed blockchain-based supply chain tracking system for enhanced transparency<br/>
+• Implemented Hyperledger Fabric for secure document exchange between logistics partners<br/>
 • Reduced time-to-market with optimized CI/CD pipeline (Jenkins, Wildfly, RedHat)<br/>
 • Initiated transition to observability with ELK stack via Docker Compose<br/>
 • Automated testing lifecycle with JUnit 5, Mockito, Cucumber, DbUnit<br/>
@@ -146,13 +155,15 @@ cldn_details = """
 right_col_page2.append(Paragraph(cldn_details, styles["RightBodyText"]))
 right_col_page2.append(Spacer(1, 10))
 
-# Ravago experience (enhanced)
+# Ravago experience (enhanced) - updated with blockchain
 ravago_details = """
 <b>Ravago — Freelance Java Developer</b><br/>
 <i>October 2021 - December 2024 (3 years 3 months)</i><br/><br/>
 
 • Designed and implemented scalable microservices architecture for chemical distribution systems<br/>
 • Developed high-performance REST APIs handling complex chemical data and inventory management<br/>
+• Created blockchain-based solution for chemical provenance and regulatory compliance tracking<br/>
+• Implemented Ethereum smart contracts for transparent supply chain transactions<br/>
 • Optimized database performance through query optimization and indexing strategies<br/>
 • Implemented CI/CD pipelines using Jenkins and Docker for automated deployment<br/>
 • Enhanced system reliability through comprehensive testing with JUnit and Mockito<br/>
@@ -161,6 +172,42 @@ ravago_details = """
 """
 right_col_page2.append(Paragraph(ravago_details, styles["RightBodyText"]))
 right_col_page2.append(Spacer(1, 10))
+
+# Blockchain Project
+blockchain_details = """
+<b>Blockchain Solutions — Independent Consultant</b><br/>
+<i>January 2022 - October 2023 | Remote</i><br/><br/>
+
+• Developed smart contracts for decentralized finance (DeFi) applications on Ethereum<br/>
+• Designed and implemented tokenization systems for asset representation on blockchain<br/>
+• Created blockchain-based identity verification solutions for enhanced security<br/>
+• Consulted on blockchain architecture for various startups and enterprises<br/>
+• Conducted security audits for smart contracts and blockchain applications<br/>
+• Built decentralized applications (DApps) with Web3.js and React frontends
+"""
+right_col_page2.append(Paragraph(blockchain_details, styles["RightBodyText"]))
+right_col_page2.append(Spacer(1, 10))
+
+# Create a table for the second page with empty left column
+table_data_page2 = [[empty_left_col, right_col_page2]]
+table_page2 = Table(table_data_page2, colWidths=[150, 390])
+table_page2.setStyle(TableStyle([
+    ("VALIGN", (0,0), (-1,-1), "TOP"),
+    ("LEFTPADDING", (0,0), (-1,-1), 12),
+    ("RIGHTPADDING", (0,0), (-1,-1), 12),
+    ("BOTTOMPADDING", (0,0), (-1,-1), 0),
+    ("BACKGROUND", (0,0), (0,-1), left_bg_color),
+]))
+
+elements.append(table_page2)
+elements.append(PageBreak())
+
+# Third page for remaining content
+empty_left_col_page3 = [Spacer(150, 10)]
+right_col_page3 = []
+
+right_col_page3.append(Paragraph("<b>Experience (continued)</b>", styles["RightSectionHeader"]))
+right_col_page3.append(Spacer(1, 12))
 
 # Other experiences (condensed)
 other_roles = """
@@ -179,20 +226,21 @@ other_roles = """
 <b>Uitgeverij Van In — Software Designer Java</b><br/>
 <i>May 2018 - September 2018 (5 months)</i>
 """
-right_col_page2.append(Paragraph(other_roles, styles["RightBodyText"]))
-right_col_page2.append(Spacer(1, 12))
+right_col_page3.append(Paragraph(other_roles, styles["RightBodyText"]))
+right_col_page3.append(Spacer(1, 12))
 
-right_col_page2.append(Paragraph("<b>Education</b>", styles["RightSectionHeader"]))
+right_col_page3.append(Paragraph("<b>Education</b>", styles["RightSectionHeader"]))
 edu = """
+<b>Blockchain Specialization</b> — Coursera (2021)<br/>
 <b>Hogeschool Dirksen</b> — HBO Bachelor, Embedded Engineering (2007 - 2009)<br/>
 <b>KTA Schoten</b>
 """
-right_col_page2.append(Paragraph(edu, styles["RightBodyText"]))
+right_col_page3.append(Paragraph(edu, styles["RightBodyText"]))
 
-# Create a table for the second page with empty left column
-table_data_page2 = [[empty_left_col, right_col_page2]]
-table_page2 = Table(table_data_page2, colWidths=[150, 390])
-table_page2.setStyle(TableStyle([
+# Create a table for the third page with empty left column
+table_data_page3 = [[empty_left_col_page3, right_col_page3]]
+table_page3 = Table(table_data_page3, colWidths=[150, 390])
+table_page3.setStyle(TableStyle([
     ("VALIGN", (0,0), (-1,-1), "TOP"),
     ("LEFTPADDING", (0,0), (-1,-1), 12),
     ("RIGHTPADDING", (0,0), (-1,-1), 12),
@@ -200,8 +248,8 @@ table_page2.setStyle(TableStyle([
     ("BACKGROUND", (0,0), (0,-1), left_bg_color),
 ]))
 
-elements.append(table_page2)
+elements.append(table_page3)
 
 doc.build(elements, onFirstPage=add_background, onLaterPages=add_background)
 
-print(f"Modern CV created: {output_path_modern}")
+print(f"Modern CV with blockchain experience created: {output_path_modern}")
